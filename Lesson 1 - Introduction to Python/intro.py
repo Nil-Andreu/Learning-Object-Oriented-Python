@@ -36,14 +36,15 @@ going ahead with python programming.
 '''
 
 # Variables
-x = 5
-y = "John"
-print(x)
+x = 5 #Integer variable
+y = "John" #String variable
+z = 100.0 #Float variable
+print(x) 
 print(y)
 
 # String Operations
 a = "Hello"
-b = "World"
+b = 'World' #Note taht now with Python we could use simple quotes as well as double quotes
 print(a+b)
 
 # For loop travesing a list
@@ -53,5 +54,10 @@ for x in fruits:
 
 # For loop iterating 6 times
 for i in range(6):
+  print(i)
+
+#String is a type of variable composed by character variables. So we can loop with those
+h = "Hello"
+for i in h:
   print(i)
 
