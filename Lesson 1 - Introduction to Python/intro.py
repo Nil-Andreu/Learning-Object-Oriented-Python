@@ -41,6 +41,7 @@ y = "John" #String variable
 z = 100.0 #Float variable
 print(x) 
 print(y)
+print(z)
 
 # String Operations
 a = "Hello"
