@@ -21,8 +21,8 @@ blu = Tiger("Blu", 10)
 woo = Tiger("Woo", 15)
 
 # access the class attributes
-print("Blu is a {}".format(blu.__class__.species))
-print("Woo is also a {}".format(woo.__class__.species))
+print("Blu is a {}".format(blu.__class__.species)) #We use format to pass values inside of {}
+print("Woo is also a {}".format(woo.__class__.species)) #We use .__class__species to obtain the property species of the class of woo
 
 # access the instance attributes
 print("{} is {} years old".format( blu.name, blu.age))
@@ -63,7 +63,7 @@ Blu is now hunting'''
 #Use of Inheritance in Python
 # parent class
 class Bird:
-    
+
     def __init__(self):
         print("Bird is ready")
 
@@ -77,7 +77,7 @@ class Bird:
 class Penguin(Bird):
 
     def __init__(self):
-        # call super() function
+        # call super() function, which allows us to charge superclass method's
         super().__init__()
         print("Penguin is ready")
 
@@ -103,7 +103,7 @@ Run faster'''
 class Computer:
 
     def __init__(self):
-        self.__maxprice = 900
+        self.__maxprice = 900 #Using __init__ method to initialize the values of a class
 
     def sell(self):
         print("Selling Price: {}".format(self.__maxprice))
